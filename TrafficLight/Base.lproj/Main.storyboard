@@ -16,50 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="177" translatesAutoresizingMaskIntoConstraints="NO" id="md8-1E-fX8">
-                                <rect key="frame" x="107" y="74" width="200" height="718"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy2-jy-B9u">
+                                <rect key="frame" x="107" y="782" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="uzw-9P-tBY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="bottonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPr-rF-eNY"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="qKB-tz-4nH">
+                                <rect key="frame" x="143" y="81" width="128" height="481"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="qKB-tz-4nH">
-                                        <rect key="frame" x="36" y="0.0" width="128" height="481"/>
-                                        <subviews>
-                                            <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upD-zV-5dj">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="125"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAM-PB-Pgx">
-                                                <rect key="frame" x="0.0" y="175" width="128" height="128"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxp-VB-dnw">
-                                                <rect key="frame" x="0.0" y="353" width="128" height="128"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy2-jy-B9u">
-                                        <rect key="frame" x="0.0" y="658" width="200" height="60"/>
-                                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Fhn-QL-zWt"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Start">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="bottonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPr-rF-eNY"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="upD-zV-5dj">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="125"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ZAM-PB-Pgx">
+                                        <rect key="frame" x="0.0" y="175" width="128" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hxp-VB-dnw">
+                                        <rect key="frame" x="0.0" y="353" width="128" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="upD-zV-5dj" firstAttribute="width" secondItem="ZAM-PB-Pgx" secondAttribute="width" id="1vn-go-dDn"/>
+                                    <constraint firstItem="ZAM-PB-Pgx" firstAttribute="width" secondItem="hxp-VB-dnw" secondAttribute="width" id="8SJ-zF-ukR"/>
+                                    <constraint firstItem="hxp-VB-dnw" firstAttribute="height" secondItem="upD-zV-5dj" secondAttribute="height" multiplier="1.024" id="Hvt-oD-5o5"/>
+                                    <constraint firstItem="hxp-VB-dnw" firstAttribute="width" secondItem="upD-zV-5dj" secondAttribute="width" id="dKC-SK-wcU"/>
+                                    <constraint firstItem="ZAM-PB-Pgx" firstAttribute="height" secondItem="hxp-VB-dnw" secondAttribute="height" id="r3d-te-Fm5"/>
+                                    <constraint firstItem="upD-zV-5dj" firstAttribute="height" secondItem="ZAM-PB-Pgx" secondAttribute="height" multiplier="0.976562" id="yIF-gg-rs8"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemFillColor"/>
                         <constraints>
-                            <constraint firstItem="md8-1E-fX8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="7kP-YN-fFk"/>
-                            <constraint firstItem="md8-1E-fX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wby-Re-9cw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="md8-1E-fX8" secondAttribute="bottom" constant="70" id="rpO-zf-KXK"/>
+                            <constraint firstItem="qKB-tz-4nH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:7" id="HH4-JT-ob7"/>
+                            <constraint firstItem="qKB-tz-4nH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="HHu-wR-VN7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wy2-jy-B9u" secondAttribute="bottom" constant="20" id="Z7T-BS-nWC"/>
+                            <constraint firstItem="qKB-tz-4nH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qXB-5T-BhM"/>
+                            <constraint firstItem="Wy2-jy-B9u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rsK-FD-S9Q"/>
+                            <constraint firstAttribute="bottom" secondItem="qKB-tz-4nH" secondAttribute="bottom" constant="334" id="thO-2b-CMk"/>
                         </constraints>
                     </view>
                     <connections>
