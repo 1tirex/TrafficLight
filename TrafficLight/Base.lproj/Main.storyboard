@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy2-jy-B9u">
-                                <rect key="frame" x="107" y="782" width="200" height="60"/>
+                                <rect key="frame" x="107" y="748" width="200" height="64"/>
                                 <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="uzw-9P-tBY"/>
+                                    <constraint firstAttribute="width" secondItem="Wy2-jy-B9u" secondAttribute="height" multiplier="47:15" id="ZI6-k0-cMH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="qKB-tz-4nH">
-                                <rect key="frame" x="143" y="81" width="128" height="484"/>
+                                <rect key="frame" x="143" y="94" width="128" height="484"/>
                                 <subviews>
                                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="upD-zV-5dj">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -61,8 +61,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemFillColor"/>
                         <constraints>
-                            <constraint firstItem="qKB-tz-4nH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="HHu-wR-VN7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wy2-jy-B9u" secondAttribute="bottom" constant="20" id="Z7T-BS-nWC"/>
+                            <constraint firstItem="qKB-tz-4nH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="9MR-oJ-Xpk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wy2-jy-B9u" secondAttribute="bottom" constant="50" id="BLl-se-uXp"/>
+                            <constraint firstItem="Wy2-jy-B9u" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:112" id="Q9l-27-sjc"/>
                             <constraint firstItem="qKB-tz-4nH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:7" id="chx-EP-a6E"/>
                             <constraint firstItem="qKB-tz-4nH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qXB-5T-BhM"/>
                             <constraint firstItem="Wy2-jy-B9u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rsK-FD-S9Q"/>
