@@ -31,8 +31,8 @@
                                     <action selector="bottonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPr-rF-eNY"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="qKB-tz-4nH">
-                                <rect key="frame" x="143" y="59" width="128" height="481"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="qKB-tz-4nH">
+                                <rect key="frame" x="123.5" y="15" width="128" height="481"/>
                                 <subviews>
                                     <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upD-zV-5dj">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="125"/>
@@ -47,14 +47,18 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="ufU-9u-ZIU"/>
+                                    <constraint firstAttribute="height" constant="481" id="ug0-ut-zGT"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemFillColor"/>
                         <constraints>
-                            <constraint firstItem="qKB-tz-4nH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="EDF-uJ-r4a"/>
+                            <constraint firstItem="qKB-tz-4nH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0P3-wd-9gY"/>
+                            <constraint firstItem="qKB-tz-4nH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="IVv-D6-cKX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wy2-jy-B9u" secondAttribute="bottom" constant="20" id="Z7T-BS-nWC"/>
-                            <constraint firstItem="qKB-tz-4nH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTv-T6-O6M"/>
                             <constraint firstItem="Wy2-jy-B9u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rsK-FD-S9Q"/>
                         </constraints>
                     </view>
